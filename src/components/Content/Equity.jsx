@@ -70,14 +70,14 @@ function Equity() {
 
     <section className='flex gap-5 flex-wrap lg:flex-nowrap justify-center lg:justify-between mt-10 md:gap-20 lg:gap-5'>
 
-   {details.map((det) => ( <div className='bg-white rounded-xl w-[278px] h-[520px] pl-5 pt-5 pb-5'>
+   {details.map((det) => ( <div className='bg-white rounded-xl w-[400px]  md:w-[278px] h-[520px] pl-5 pt-5 pb-5'>
     <img src={det.img} alt='' />
 
-    <p className='mt-5 w-[224px]'>{det.title}</p>
+    <p className='mt-5 w-[300] md:w-[224px]'>{det.title}</p>
 
     <h1 className='mt-5 font-semibold'>{det.job}</h1>
 
-    <div className='flex gap-5 mt-5'>
+    <div className='flex justify-between md:gap-5 mt-5 '>
     <span>
     <label className=' uppercase text-[#8E8E8E] text-base'>Location</label>
     <p className='text-sm'>{det.locate}</p>
@@ -89,7 +89,7 @@ function Equity() {
     </span>
     </div>
 
-    <div className='flex gap-5 mt-5'>
+    <div className='flex justify-between md:gap-5 mt-5'>
     <span>
     <label className=' uppercase text-[#8E8E8E] flex justify-end text-base'>Equity</label>
     <p className='text-sm'>{det.equity}</p>
@@ -104,7 +104,7 @@ function Equity() {
     </div>
     
 
-    <div className='flex gap-5 mt-5'>
+    <div className='flex justify-between md:gap-5 mt-5'>
     <span>
     <label className=' uppercase text-[#8E8E8E] text-base'>DeadLine</label>
     <p className='text-sm'>{det.deadline}</p>
@@ -118,8 +118,9 @@ function Equity() {
 
     </div>
     
+    <div className='flex justify-center'>
     <button className='bg-[#303030] cursor-pointer py-4 px-16 rounded-full text-white mt-5'>View Details</button>
-    
+    </div>
     </div>))}
     
     

@@ -45,12 +45,12 @@ function Intro() {
           initial={{ opacity: 0.6 }}
           animate={{ opacity: index === currentSlide ? 1 : 0.6 }}
           transition={{ duration: 1.2 }}
-          className={`flex flex-wrap-reverse justify-center  gap-14 md:flex-nowrap bg-white shadow ${index === currentSlide ? 'block' : 'hidden'}`}
+          className={`flex flex-wrap-reverse justify-center gap-3  md:gap-14 md:flex-nowrap bg-white shadow ${index === currentSlide ? 'block' : 'hidden'}`}
         >
-          <div className='text-center md:text-start  md:ml-[40px] lg:ml-[120px] mt-10 lg:mt-24 md:w-[90%] lg:w-[491px] h-[250px]'>
-            <h1 className='font-bold  md:leading-6 lg:leading-8  text-3xl lg:text-3xl md:text-2xl'>{det.title}</h1>
+          <div className='text-center md:text-start  md:ml-[40px] lg:ml-[120px] mt-1 lg:mt-24 md:w-[90%] lg:w-[491px] h-[250px]'>
+            <h1 className='font-bold  md:leading-6 lg:leading-8  text-2xl lg:text-3xl md:text-2xl'>{det.title}</h1>
             <p className='leading-8 mt-2 md:mt-0'>{det.summ}</p>
-            <button className='px-8 py-4 md:py-2 md:px-6lg:py-4 lg:px-8 bg-[#303030] text-white rounded-full mt-5 lg:mt-10'>SINC With us</button>
+            <button className='px-6 py-2 md:py-2 md:px-6 lg:py-4 lg:px-8 bg-[#303030] text-white rounded-full mt-5 lg:mt-10'>SINC With us</button>
           </div>
           <div>
             <img src={det.img} alt='pic' />

@@ -12,7 +12,7 @@ function Footer() {
 
     <main className='px-5 md:px-10 lg:px-20'>
 
-    <section className='flex  flex-wrap lg:flex-nowrap gap-32 lg:gap-5 md:justify-between py-5'>
+    <section className='flex  flex-wrap lg:flex-nowrap gap-16 md:gap-32 lg:gap-5 md:justify-between py-5'>
 
     <div>
     <img src={Sinc}/>
@@ -121,7 +121,7 @@ function Footer() {
     
     </div>
     <div>
-   <span className='flex gap-10 mt-10 lg:mt-0'><img src={Gas} alt='gas'/> <p className='w-[400px] lg:w-[217px] h-[38px] text-sm'>We are a business built on the foundation of Christian values and belief</p></span> 
+   <span className='flex gap-10 mt-10 lg:mt-0'><img src={Gas} alt='gas'/> <p className='w-[300px] lg:w-[217px] h-[38px] text-sm'>We are a business built on the foundation of Christian values and belief</p></span> 
    <span>
    
    </span>

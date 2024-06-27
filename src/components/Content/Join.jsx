@@ -58,15 +58,15 @@ function Join() {
     <div className=' leading-10'>
     <h1 className='text-5xl text-center '>Join Our Entrepreneur In Residence (EIR) Program</h1>
     </div>
-    <div className='mt-10 px-24'>
-    <p className=' leading-8 text-lg text-center'>Our EIR program is our structured 3 months un-paid program designed to help us have a pipeline of business and technical cofounders who can run the venture of choice as CEO & CTO owning 20% equity each.</p>
+    <div className='mt-10 px-10 md:px-24'>
+    <p className=' leading-7 md:leading-8 md:text-lg text-center text-base'>Our EIR program is our structured 3 months un-paid program designed to help us have a pipeline of business and technical cofounders who can run the venture of choice as CEO & CTO owning 20% equity each.</p>
     </div>
 
 
     <div className='scroll'>
   
 
-    <section className='flex flex-wrap md:flex-nowrap gap-5 mt-10 transistion-transform ease-out duration-500 w-[250%]'  style={{ transform: `translateX(-${curr * 10}%)` }} >
+    <section className='flex flex-wrap md:flex-nowrap gap-5 mt-10 transistion-transform ease-out duration-500 w-[100%]  md::w-[250%]'  style={{ transform: `translateX(-${curr * 10}%)` }} >
 
    { Slide.map((slide) => ( 
     <div className='p-5 rounded-xl bg-white '>

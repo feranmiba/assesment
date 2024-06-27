@@ -60,7 +60,7 @@ function Feature() {
 
       <div className='scroll'>
         <motion.section
-          className='flex w-[500%]  lg:w-[350%] gap-10 justify-evenly mt-10'
+          className='flex  w-[500%]  lg:w-[350%] gap-10 justify-evenly mt-10'
           style={{ marginLeft: `${-currentSlide * 80}%` }} // Adjusts position based on currentSlide
           initial={{ opacity: 1 }}
           animate={{ opacity: 1 }}
@@ -69,14 +69,14 @@ function Feature() {
           {details.map((det, index) => (
             <motion.div
               key={index}
-              className='flex gap-10 bg-white'
+              className='flex flex-wrap lg:flex-nowrap gap-10 bg-white'
               initial={{ opacity: 0 }}
               animate={{ opacity: index === currentSlide ? 1 : 1 }}
               transition={{ duration: 0.6 }}
             >
-              <img src={det.img1} alt='dds' className=' w-[50%] md:w-[60%] lg:w-[90%]' />
+              <img src={det.img1} alt='dds' className=' w-[100%] lg:w-[90%]' />
 
-              <span className='lg:w-[322px] md:w-[400px] w-[222px] text-[#4E4E4E] py-10 px-5'>
+              <span className='lg:w-[322px]  w-[100%] text-[#4E4E4E] py-10 px-5'>
                 <img src={det.img2} alt='hch' />
                 <h1 className='font-semibold text-[#212121] mb-5 mt-5'>{det.title}</h1>
                 <p className='text-sm'>{det.summ}</p>
